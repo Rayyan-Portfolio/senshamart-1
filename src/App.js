@@ -1,7 +1,13 @@
-import React from "react";
+import React, {useState} from "react";
 import "./App.css";
 
 function App() {
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+
+  const toggleDropdown = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
   return (
     <div className="app">
       <header className="header">
@@ -17,13 +23,30 @@ function App() {
           <a href="#help">Help</a>
         </nav>
         <div className="cart-profile">
-          <div className="cart">
-            <span className="cart-count">2</span>
-            🛒
+          {/* Cart Section */}
+          <div className="cart-container">
+            <div className="cart-icon-container">
+              <img src="/f7_cart.png" alt="Cart Icon" className="cart-icon" />
+              <span className="cart-count">2</span>
+            </div>
           </div>
-          <div className="profile-icon">👤</div>
+
+          {/* Separator */}
+          <div className="separator">|</div>
+
+          {/* Profile Section */}
+          <div className="profile-container" onClick={toggleDropdown}>
+            <img src="/profile.png" alt="Profile Icon" className="profile-icon" />
+            <span className="dropdown-arrow">⌄</span>
+            {dropdownVisible && (
+              <div className="dropdown-menu">
+                <button>Check Profile</button>
+                <button>Log in as a Provider</button>
+              </div>
+            )}
+          </div>
         </div>
-      </header>
+      </header> 
 
       <main className="main">
         <h2 className="greeting">Good Afternoon</h2>
