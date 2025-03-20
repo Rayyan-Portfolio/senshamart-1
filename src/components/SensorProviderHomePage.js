@@ -18,10 +18,10 @@ function SensorProviderPage() {
           <span className="logo-part blue">Mart</span>
         </h1>
         <nav className="nav">
-          <a href="#sell-data">Sell Data</a>
-          <a href="#my-marketplace">My Marketplace</a>
-          <a href="#blog">Blog</a>
-          <a href="#help">Help</a>
+          <a href="sell-data">Sell Data</a>
+          <a href="my-marketplace">My Marketplace</a>
+          <a href="blog">Blog</a>
+          <a href="help">Help</a>
         </nav>
         <div className="cart-profile">
           {/* Profile Section */}
