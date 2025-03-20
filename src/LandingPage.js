@@ -13,7 +13,7 @@ function LandingPage() {
                     <span className="logo-part blue">Mart</span>
                 </h1>
                 <nav className="nav">
-                    <a href="#home">Home</a>
+                    <a href="/">Home</a>
                     <a href="#about">About Us</a>
                     <a href="#blog">Blog</a>
                     <a href="#contact">Contact Us</a>
@@ -86,7 +86,7 @@ function LandingPage() {
                     <h4 className="newsletter-heading">Sign Up For Our Newsletter!</h4>
                     <div className="newsletter-form">
                         <input type="text" placeholder="Placeholder Text" />
-                        <button className="signup-button">Sign-Up</button>
+                        <button className="signup-button">Sign Up</button>
                     </div>
                 </div>
                 </div>
